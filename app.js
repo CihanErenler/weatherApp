@@ -15,7 +15,6 @@ document.querySelector('.search-icon').addEventListener('click', () => {
         .then(resolve => {
             calculateTime(resolve)
             manageUi(resolve)
-            console.log(resolve)
         })
         .catch(err => console.log(err));
     }
@@ -34,7 +33,6 @@ document.body.addEventListener('keypress', (e) => {
             .then(resolve => {
                 calculateTime(resolve)
                 manageUi(resolve)
-                console.log(resolve)
             })
             .catch(err => console.log(err));
         }
@@ -83,7 +81,7 @@ function manageUi(data){
     document.querySelector('.condition').textContent = data.weather[0].description;
     document.querySelector('.humidity').textContent = `Humidity : ${data.main.humidity}`;
     document.querySelector('.pressure').textContent = `Pressure : ${data.main.pressure}`;
-    console.log(data)
+ 
     document.querySelector('.weather-image').setAttribute('src',`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
 }
 
