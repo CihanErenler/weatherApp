@@ -1,0 +1,153 @@
+/* Reeset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+}
+
+.card{
+    width: 450px;
+    height: 700px;
+    background: linear-gradient(to bottom, #e68d28,#40acf5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    transition: background .4s ease;
+}
+
+.card .time{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-weight: 300;
+}
+
+.card .search-wrapper{
+    border: 1px solid rgba(255, 255, 255, .3);
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    margin-top: 40px;
+    display: flex;
+    padding: 4px 4px 0 4px;
+    transition: width .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .search-wrapper:focus-within{
+    width: 100%;
+}
+
+.card .search-box{
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 45px 0 20px;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card .search-icon{
+    font-size: 20px;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    margin-left: auto;
+    transition: background .3s ease;
+}
+
+.card .search-wrapper:focus-within .search-icon{
+    background: rgba(255, 255, 255, .3);
+}
+
+.card .city{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.card .date{
+    font-weight: 300;
+}
+
+.card .temp{
+    font-size: 120px;
+    font-weight: 400;
+    border-radius: 15px;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    margin-top: 20px;
+}
+
+.hmm{
+    display: flex;
+}
+
+.card .feels{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.condition{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+img{
+   width: 120px;
+}
+
+.marker{
+    display: inline-block;
+    font-size: 38px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+hr{
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.bottom{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottom h5{
+    font-weight: 300;
+    font-size: 15px;
+}
+
