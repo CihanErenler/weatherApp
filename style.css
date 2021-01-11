@@ -71,6 +71,7 @@ a{
     top: 0;
     bottom: 0;
     left: 0;
+    height: 45px;
 }
 
 .card .search-icon{
