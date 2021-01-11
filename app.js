@@ -48,6 +48,12 @@ document.body.addEventListener('keypress', (e) => {
     }
 })
 
+document.addEventListener('click', (e) => {
+    if(!e.target.classList.contains('search-box')){
+        document.querySelector('.search-box').value = "";
+    }
+})
+
 async function getResult(city){
     const data = await fetch(`${api.url}weather?q=${city}&units=metric&appid=${api.key}`);
     const jsonData = await data.json();
