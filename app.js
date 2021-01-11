@@ -20,6 +20,15 @@ document.querySelector('.search-icon').addEventListener('click', () => {
     }
 })
 
+window.addEventListener('load',() => {
+    getResult('Helsinki')
+    .then(resolve => {
+        calculateTime(resolve)
+        manageUi(resolve)
+    })
+    .catch(err => console.log(err));
+})
+
 document.body.addEventListener('keypress', (e) => {
     if(e.key === 'Enter'){
 
